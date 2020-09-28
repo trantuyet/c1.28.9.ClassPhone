@@ -6,12 +6,21 @@
 </head>
 <body>
 <div class="mobile">
-    <p id ="iphone-name">Mobile</p>
-    <textarea id="iphone-inbox" cols="30" rows="10" placeholder="inbox" oninput="writeMess(mobile2,this.value)"></textarea>
-    <textarea id="iphone-outbox" cols="30" rows="10" placeholder="outbox" oninput="writeMess(mobile1,this.value)"></textarea>
-
-    <input type="text" id="iphone-msg" placeholder="Type number here"> <br>
-    <button onclick="sendMess()">Gửi</button>
+    <p id="iphone-name">Mobile</p>
+    <textarea id="iphone-inbox" placeholder="Inbox" cols="30" rows="10"></textarea>
+    <textarea id="iphone-outbox" placeholder="Outbox" cols="30" rows="10"></textarea>
+    <input type="text" oninput="writeMess(mobile1,this.value)" id="iphone-msg" placeholder="write message here...">
+    <button onclick="sendMess(mobile1,mobile2)">Send</button>
 </div>
+
+<div class="mobile">
+    <p id="nokia-name">Mobile</p>
+    <textarea id="nokia-inbox" placeholder="Inbox" cols="30" rows="10"></textarea>
+    <textarea id="nokia-outbox" placeholder="Outbox" cols="30" rows="10"></textarea>
+    <input type="text" oninput="writeMess(mobile2,this.value)" id="nokia-msg" placeholder="write message here...">
+    <button onclick="sendMess(mobile2,mobile1)">Send</button>
+</div>
+<link rel="stylesheet" href="css.css">
+<script src="js.js"></script>
 </body>
 </html>

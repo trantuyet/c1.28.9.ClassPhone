@@ -1,0 +1,11 @@
+.mobile {
+    width: 300px;
+    border: 1px solid;
+    text-align: center;
+    display:inline-block
+}
+
+input{
+    width: 200px;
+    margin-bottom: 10px;
+}
