@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phoneeee</title>
+</head>
+<body>
+<div class="mobile">
+    <p id ="iphone-name">Mobile</p>
+    <textarea id="iphone-inbox" cols="30" rows="10" placeholder="inbox" oninput="writeMess(mobile2,this.value)"></textarea>
+    <textarea id="iphone-outbox" cols="30" rows="10" placeholder="outbox" oninput="writeMess(mobile1,this.value)"></textarea>
+
+    <input type="text" id="iphone-msg" placeholder="Type number here"> <br>
+    <button onclick="sendMess()">Gửi</button>
+</div>
+</body>
+</html>
